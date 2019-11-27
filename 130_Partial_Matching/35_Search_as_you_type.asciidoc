@@ -261,7 +261,7 @@ Elasticsearch ((("completion suggester")))里的 {ref}/search-suggesters-complet
 
 ==== 边界 n-grams 与邮编
 
-边界 n-gram 的方式可以用来查询结构化的数据，((("postcodes (UK), partial matching with", "using edge n-grams")))((("edge n-grams", "and postcodes")))比如 <<prefix-query,本章之前示例>> 中的邮编（postcode）。当然 `postcode` 字段需要 `analyzed` 而不是 `not_analyzed` ，不过可以用 `keyword` 分词器来处理它，就好像他们是 `not_analyzed` 的一样。((("keyword tokenizer", "using for values treated as not_analyzed")))((("not_analyzed fields", "using keyword tokenizer with")))
+边界 n-gram 的方式可以用来查询结构化的数据，((("postcodes (UK), partial matching with", "using edge n-grams")))((("edge n-grams", "and postcodes")))比如 <<prefix-query,本章之前示例>> 中的邮编（postcode）。当然 `postcode` 字段需要 `not_analyzed` 而不是 `analyzed` ，不过可以用 `keyword` 分词器来处理它，就好像他们是 `not_analyzed` 的一样。((("keyword tokenizer", "using for values treated as not_analyzed")))((("not_analyzed fields", "using keyword tokenizer with")))
 
 [TIP]
 ==================================================
